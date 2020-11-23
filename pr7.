@@ -1,0 +1,30 @@
+/*Practica 7           Morales Salinas Eduardo 
+Fecha de entrega: 23/11/2020
+*/
+
+//Seccion de librerias del programa
+#include<stdio.h>
+// Declracion de la funcion 
+int main() {
+// Declaracion de variables globales 
+int vidaP=1000, impactos, botiquin=100,N;
+float danoArma= 35.8;
+char tipoArma= 'B';
+float vidaTotal,damage,vidaB,salud;
+//Uso de las variables para determinar el daño por un tiro en un videojuego 
+printf("¿Cuantos tiros recibio tu personaje?");
+scanf("%i", &impactos);
+damage=danoArma*impactos;
+vidaTotal=vidaP-damage;
+//bloque de instrucciones 
+printf("\nTu personaje perdio un total de: %.2f", damage);
+printf("Por lo que te queda una vida rstante de: %.2f", vidaTotal);
+printf("\nIngresa el numero botiquines si es que aun tienes");
+scanf("%i", &N);
+salud=botiquin*N;
+vidaB=vidaTotal+botiquin;
+printf("Genial tu vida a aumentado a: %2f", vidaB);
+return 9;
+
+
+}
